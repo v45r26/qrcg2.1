@@ -1,0 +1,83 @@
+.hx_cust_confirmation_mb
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    background: rgb(255 255 255 / 100%);
+    /*width: 100%;*/
+    /*height: 100%;*/
+}
+.hx_cust_confirmation_modal
+{
+    /*position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);*/
+    /* border: 1px solid #000; */
+    padding: 20px;
+    width: 250px;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 0 10px 0 #0004;
+    /*display: none;*/
+}
+.hx_cust_confirmation_modal .hccm_says
+{
+    /* border: 1px solid #000; */
+    color: #a5a5a5;
+    font-family: arial;
+}
+.hx_cust_confirmation_modal .hccm_header
+{
+    margin: 10px auto;
+    font-family: arial;
+    font-weight: 600;
+    color: #333;
+    /*border: 1px solid #000; */
+    
+}
+.hx_cust_confirmation_modal .hccm_button_box
+{
+    /* border: 1px solid #000; */
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0 10px;
+    
+}
+.hx_cust_confirmation_modal .hccm_button_box .hccm_b_b_false,
+.hx_cust_confirmation_modal .hccm_button_box .hccm_b_b_true
+{
+    border: 0px solid #000;
+    width: 80px;
+    padding: 8px;
+    text-align: center;
+    border-radius: 10px;
+    font-weight: 600;
+    color: #fff;
+    text-shadow: 1px 1px 4px #989898;
+    cursor: pointer;
+    font-family: arial;
+    /* box-shadow: 0 0 10px 0 #0003; */
+}
+.hx_cust_confirmation_modal .hccm_button_box .hccm_b_b_false
+{
+    /* border: 1px solid #000; */
+    background: #ff8484d6;
+}
+.hx_cust_confirmation_modal .hccm_button_box .hccm_b_b_true
+{
+    background: #6ce689d6;
+}
+.hx_cust_confirmation_modal .hccm_button_box .hccm_b_b_false:hover,
+.hx_cust_confirmation_modal .hccm_button_box .hccm_b_b_true:hover,
+.hx_cust_confirmation_modal .hccm_button_box .hccm_b_b_false:focus,
+.hx_cust_confirmation_modal .hccm_button_box .hccm_b_b_true:focus
+{
+    box-shadow: 0 0 10px 0 #0003 inset;
+}

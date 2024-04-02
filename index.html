@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>QRCG - MAKE QR</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="ico/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="ico/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="ico/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="ico/favicon-16x16.png">
+	<link rel="manifest" href="ico/site.webmanifest">
+	
+	<!-- CSS -->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	
+	<!-- ACP CSS -->
+
+	<link rel="stylesheet" type="text/css" href="hx_js_acp/lib/alert/style.css">
+	<link rel="stylesheet" type="text/css" href="hx_js_acp/lib/confirm/style.css">
+	<link rel="stylesheet" type="text/css" href="hx_js_acp/lib/prompt/style.css">
+
+</head>
+<body>
+
+<div class="m_container">
+	<div class="left_div">
+		<!-- <div class="h3">QRCG 2.1</div> -->
+		<div class="logo_box"><img src="lgl_01.png"></div>
+		<form action="#" id="_form">
+			<div class="inp_fi">
+				<span class="span_f_small">UPI</span>
+				<select class="inp_fi_inp" id="_upi">
+				</select>
+			</div>
+
+			<div class="inp_fi">
+				<span class="span_f_small">NAME [Optional]</span>
+				<input type="text" name="" class="inp_fi_inp" id="_name">
+			</div>
+			<div class="inp_fi">
+				<span class="span_f_small">AMOUNT</span>
+				<input type="number" name="" class="inp_fi_inp" id="_amount">
+			</div>
+			<div class="inp_fi">
+				<button class="inp_fi_inp_but" id="_generate">GENERATE</button>
+			</div>
+		</form>
+	</div>
+	<div class="right_div">
+		<div class="qr_display_bx" id="qr_display_bx"></div>
+		<div class="qr_data_display"><!-- NO QR! --><img width="350px" src="vec1.png"></div>
+	</div>
+</div>
+
+
+<div class="m_f_ls_dv" id="m_f_ls_dv" style="display: none;">
+	<div class="form_ls_set_d">
+		<div class="form_d">
+			<h3>Add New [ UPI ]</h3>
+
+			<form action="#" id="ls_form">
+				<div class="inp_fi">
+					<span class="span_f_small">UPI</span>
+					<input type="text" class="inp_fi_inp" id="ls_upi">
+				</div>
+
+				<div class="inp_fi">
+					<span class="span_f_small">NAME [NickName]</span>
+					<input type="text" name="" class="inp_fi_inp" id="ls_name">
+				</div>
+				<div class="inp_fi adls_b">
+					<button class="inp_fi_inp_but " id="ls_upi_save">SAVE</button>
+				</div>
+			</form>
+		</div>
+	</div>
+
+	<div class="list_os_ls" id="list_os_ls">
+		
+				
+	</div>
+
+	<div class="step_cont_cls" onclick="cls_m_f_ls_dv()">&#215;</div>
+</div>
+
+<!-- Footer -->
+<div class="bott_d_">
+
+	<div class="bot_men_b">
+		<a onclick="open_m_f_ls_dv()">Setting</a>
+		<!-- <a onclick="open_m_f_info_dv()">How To</a> -->
+		<a onclick="window.location='page/how_to.html'">How To</a>
+		<a onclick="window.location='page/about.html'">About</a>
+		<a onclick="window.location='page/contact.html'">Contact</a>
+		<!-- <a href="../account/log_sig_p.html">Logout</a> -->
+	</div>
+	<div class="cr_b" style="word-spacing: 2px; letter-spacing: 1px;">
+		&#169; - <span id="bott_c_year"></span> | 
+		All Rights Reserved <br>
+		Made with ❤️ in BHARAT by v45r26
+	</div>
+</div>
+
+<!-- ACP -->
+<script src="hx_js_acp/lib/alert/index.js"></script>
+<script src="hx_js_acp/lib/confirm/index.js"></script>
+<script src="hx_js_acp/lib/prompt/index.js"></script>
+<!-- QRCODE -->
+<script src="js/qrcode.min.js"></script>
+<!-- MAIN -->
+<script src="js/index.js"></script>
+
+</body>
+</html>

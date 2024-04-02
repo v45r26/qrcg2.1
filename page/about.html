@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>QRCG - MAKE QR</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../ico/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="../ico/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="../ico/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="../ico/favicon-16x16.png">
+	<!-- <link rel="manifest" href="ico/site.webmanifest"> -->
+	<!-- CSS -->
+	<link rel="stylesheet" type="text/css" href="../css/about.css">
+
+</head>
+<body>
+
+<div class="m_container">
+	<div class="logo_box"><img src="../lgl_01.png"></div>
+
+	<div class="ht_desc">
+		<h3>About</h3>
+
+		<div class="ht_desc_bx">
+			<!-- <img src="../scrsht/02.jpg"> -->
+			<div style="padding: 10px;">
+				<!-- To genarating qr First select a upi for payment. -->
+				This is a web site to make dynamic qr for upi payment.
+			</div>
+		</div>
+	</div>
+</div>
+<br><br><br><br><br><br><br><br><br>
+
+<!-- Footer -->
+<div class="bott_d_">
+
+	<div class="bot_men_b">
+
+		<a onclick="window.location='../index.html'">Home</a>
+		<a onclick="window.location='how_to.html'">How To</a>
+		<a onclick="window.location='"><b>About</b></a>
+		<a onclick="window.location='contact.html'">Contact</a>
+	</div>
+	<div class="cr_b" style="word-spacing: 2px; letter-spacing: 1px;">
+		&#169; - <span id="bott_c_year"></span> | 
+		All Rights Reserved <br>
+		Made with ❤️ in BHARAT by v45r26
+	</div>
+</div>
+
+<!-- </script> -->
+<script type="text/javascript">
+function getY()
+{
+	a = new Date();
+	document.getElementById('bott_c_year').innerHTML = a.getFullYear();
+}
+window.onload =()=>
+{
+	getY();
+}
+
+</script> 
+</body>
+</html>
